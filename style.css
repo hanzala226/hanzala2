@@ -1,0 +1,321 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+background-image: url(Screenshot\ \(94\).png);
+margin-left: 0;
+background-size: cover;
+ display: flex;
+  align-items: center;
+ justify-content: center;
+}
+nav{
+    width: 100%;
+    height: 100px;
+   
+}
+nav ul{
+    float: right;
+    display: flex;
+    gap: 30px;
+    margin-right: 130px;
+    line-height: 100px;
+}
+nav ul a{
+    color: white;
+    transition: .2s;
+    font-size: .8rem;
+}
+nav a span{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 100px;
+    margin-left: 140px;
+}
+.main-content{
+    width: 90%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.434);
+    backdrop-filter: blur(30px);
+    border-radius: 30px 70px 20px 150px;
+}
+nav ul button{
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border-radius: 30px 70px 20px 150px;
+    margin-left: -20px;
+    font-weight: 600;
+    transition: .3s;
+    font-size: .8rem;
+    border: none;
+}
+
+
+nav button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius:20px 150px  30px 70px ;
+    color: white;
+
+}
+nav ul li a:hover{
+  color: rgba(255, 255, 255, 0.5);
+
+}
+.home{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+}
+.rightside{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.leftside{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightside-content{
+    margin-left: 140px;
+}
+.rightside-content h4{
+    color: white;
+  font-family: monospace;
+  letter-spacing: 2px;text-align: center;
+
+  font-size: .8rem;
+    margin-bottom: 10px;
+}
+.rightside-content h1{
+    color: white;
+    margin-bottom: px;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+.rightside-content h1 span{
+    color: black;
+   
+}
+.rightside-content h3{
+    color: white;
+
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    font-size: 2.5rem;
+}
+.rightside-content button{
+    background-color: black;
+    width: 130px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius:20px 150px  30px 70px ;
+    margin-top: 50px;
+    transition: .3s;
+    height: 50px;
+
+}
+.rightside-content button:hover{
+    background-color: transparent
+    ;
+    border-radius: 30px 70px 20px 150px;
+
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.leftside-content{
+    background-color: rgba(0, 0, 0, 0);
+    width: 370px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 70px 20px 150px;
+   
+}
+.rightside-content p{
+    color: white;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.leftside-content img{
+    border-radius: 30px 70px 20px 150px;
+    position: absolute;
+    width: 450px;
+margin-bottom: 50px;
+    height: 450px;
+}
+.leftside-content .layer1{
+    background-color: rgba(0, 0, 0, 0.162);
+    width: 450px;
+    position: absolute;
+    transform: translateY(-13px);
+    height: 450px;
+    border-radius: 30px 70px 20px 150px;
+   
+}
+@media (max-width:700px) {
+    .home{
+        flex-direction: column-reverse;
+    }
+    main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightside{
+        width: 100%;
+        height: 50%;
+        display: flex;
+       
+        align-items: center;
+    }
+    nav{
+       
+    }
+    .leftside{
+        width: 100%;
+        height: 50%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightside-content{
+        margin-left: 40px;
+        margin-top: -40px;
+    }
+    .rightside-content h4{
+        color: white;
+      font-family: monospace;
+      letter-spacing: 2px;text-align: center;
+    
+      font-size: .8rem;
+        margin-bottom: 10px;
+    }
+    .rightside-content h1{
+        color: white;
+        margin-bottom: px;
+        font-size: 1.8rem;
+        font-weight: 600;
+    
+    }
+    .rightside-content h1 span{
+        color: rgb(0, 0, 0);
+       
+    }
+    .rightside-content h3{
+        color: white;
+    
+       
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      
+        font-size: 1.7rem;
+    }
+    .rightside-content button{
+        background-color: black;
+        width: 100px;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius:20px 150px  30px 70px ;
+        margin-top: 20px;
+        margin-left: 50px;
+        transition: .3s;
+        height: 50px;
+    
+    }
+    .main-content{
+        height: 95vh;
+        width: 97%;
+    }
+
+    nav a span{
+line-height: 80px;
+    margin-left: 40px;
+    font-size: 1.5rem;
+    }
+    .leftside-content{
+        background-color: rgba(0, 0, 0, 0);
+        width: 230px;
+        height: 230px;
+        display: flex;
+       
+        border-radius: 30px 70px 20px 150px;
+       
+    }
+    .rightside-content p{
+        color: white;
+        margin-top: 10px;
+        font-size: .6rem;
+    }
+    .leftside-content img{
+        border-radius: 30px 70px 20px 150px;
+        position: absolute;
+        width: 300px;
+ 
+        height: 300px;
+    }
+    .leftside-content .layer1{
+        background-color: rgba(36, 36, 36, 0.361);
+        width: 300px;
+        position: absolute;
+        
+        height: 270px;
+        border-radius: 30px 70px 20px 150px;
+       
+    }
+}
+.checkbtn{
+    font-size: 2rem;
+    float: right;
+    margin-right: 50px;
+    line-height: 80px;
+    color: rgb(255, 255, 255);
+    
+}
+#check{
+    display: none;
+}
+@media (max-width:710px) {
+    nav ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 82vh;
+        bottom: -12px;
+        bottom: 2px;
+        border-radius: 30px 70px 20px 150px;
+        background-color: #2121217e;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        transition: .3s ease-in-out;
+        z-index: 1;
+        left: -105%;
+    }
+    nav ul li a{
+        font-weight: 600;
+    }
+    
+}
+#check:checked~ul{
+    left: 0%;
+}
